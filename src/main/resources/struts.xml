@@ -16,6 +16,10 @@
 		<action name="studentActionClass" class="com.hex.action.StudentActionClass">
 			<result>success.jsp</result>
 		</action>
+		
+		<action name="studentActionModelDriven" class="com.hex.action.StudentActionModelDriven">
+			<result>success.jsp</result>
+		</action>
 	</package>
 	
 
