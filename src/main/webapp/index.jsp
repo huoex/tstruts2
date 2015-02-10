@@ -7,7 +7,13 @@
 <a href="studentAction">studentAction</a><br/><br/>
 <form action="studentAction" method="post">
 	userName<s:textfield name="username"/><br/>
-	passWord<s:password name="password"/><br/>
+	passWord<s:textfield name="password"/><br/>
+		  <s:submit value="submit"/> 
+</form>
+
+<form action="studentActionClass" method="post">
+	userName<s:textfield name="student.username"/><br/>
+	passWord<s:textfield name="student.password"/><br/>
 		  <s:submit value="submit"/> 
 </form>
 </body>

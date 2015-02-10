@@ -1,9 +1,6 @@
 package com.hex.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-
-public class StudentAction  extends ActionSupport{
-	
+public class Student {
 	private String username;
 	private String password;
 	public String getPassword() {
@@ -18,10 +15,4 @@ public class StudentAction  extends ActionSupport{
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	@Override
-	public String execute() throws Exception {
-		System.out.println("run..");
-		return super.execute();
-	}
-
 }
