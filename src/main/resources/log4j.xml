@@ -21,8 +21,8 @@
     <logger name="edu.ku.it.si">
     	<level value="debug" />
     </logger>
- 	-->
  	
+ 	-->
     <logger name="org.apache.struts2">
     	<level value="trace" />
     </logger>

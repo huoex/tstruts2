@@ -20,7 +20,6 @@ public class StudentAction  extends ActionSupport{
 	}
 	@Override
 	public String execute() throws Exception {
-		System.out.println("run..");
 		return super.execute();
 	}
 
