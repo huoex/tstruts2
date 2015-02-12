@@ -23,6 +23,10 @@
 			<interceptor-ref name="defaultStack"></interceptor-ref>
 			<result>success.jsp</result>
 		</action>
+		
+		<action name="studentListAction" class="com.hex.action.StudentListAction">
+			<result>studentList.jsp</result>
+		</action>
 	</package>
 
 </struts>

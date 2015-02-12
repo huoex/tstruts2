@@ -1,4 +1,5 @@
-<%@taglib prefix="s" uri="/struts-tags" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <body>
 
@@ -31,5 +32,7 @@
 		  <s:submit value="submit"/> 
 </s:form>
 */ %>
+
+<a href="studentListAction">studentListAction</a>
 </body>
 </html>
