@@ -2,6 +2,7 @@ package com.hex.action;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.struts2.ServletActionContext;
 
@@ -41,6 +42,9 @@ public class StudentListAction  extends ActionSupport{
 		
 		ServletActionContext.getRequest().setAttribute("studentList", "studentList");
 		ServletActionContext.getRequest().setAttribute("abc", "123");
+		
+		Map<String, Object> map = ServletActionContext.getContext().getSession();
+		map.put("stu", student);
 		return super.execute();
 	}
 
