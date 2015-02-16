@@ -6,6 +6,8 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
+	
+	<bean class="com.hex.action.Student" name="student"/>
 
 	<package name="tstruts" extends="struts-default" namespace="/">
 

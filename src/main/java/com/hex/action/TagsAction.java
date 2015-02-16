@@ -1,11 +1,15 @@
 package com.hex.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.inject.Inject;
 
 public class TagsAction extends ActionSupport {
 	String select;
 	String radio;
 	String checkbox;
+	
+	@Inject(value="student")
+	Student student;
 	
 	public String getCheckbox() {
 		return checkbox;
