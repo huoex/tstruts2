@@ -27,6 +27,11 @@
 		<action name="studentListAction" class="com.hex.action.StudentListAction">
 			<result>studentList.jsp</result>
 		</action>
+		
+		<action name="tagsAction" class="com.hex.action.TagsAction">
+			<result>success.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

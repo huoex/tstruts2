@@ -31,6 +31,5 @@
 	jsp:<%=request.getParameter("id") %><br>
 	EL param:${param.id}<br>
 	EL session:${sessionScope.stu.username }
-
 </body>
 </html>

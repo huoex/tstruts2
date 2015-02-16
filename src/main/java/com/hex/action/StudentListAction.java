@@ -19,7 +19,9 @@ public class StudentListAction  extends ActionSupport{
 	public void setStudentList(List<Student> studentList) {
 		this.studentList = studentList;
 	}
-
+	public StudentListAction() {
+		System.out.println("StudentListAction call");
+	}
 	@Override
 	public String execute() throws Exception {
 		List<Student> list = new ArrayList<Student>();

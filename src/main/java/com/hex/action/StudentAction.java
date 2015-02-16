@@ -18,6 +18,10 @@ public class StudentAction  extends ActionSupport{
 	public void setUsername(String username) {
 		this.username = username;
 	}
+	
+	public StudentAction() {
+		System.out.println("StudentAction call");
+	}
 	@Override
 	public String execute() throws Exception {
 		return super.execute();
