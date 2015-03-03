@@ -9,6 +9,7 @@
 
 	<bean class="com.hex.model.Student" name="student" />
 
+	<!--  	-->
 	<package name="tstruts" extends="struts-default" namespace="/">
 
 		<action name="studentAction" class="com.hex.action.StudentAction">
@@ -49,4 +50,19 @@
 		</action>
 	</package>
 
+    <package name="user" namespace="/" extends="struts-default">
+        <action name="update">
+            <result>update.jsp</result>
+        </action>
+        <action name="UpdateUser" class="com.hex.action.UpdateUserAction">
+            <interceptor-ref name="token"></interceptor-ref>
+            <!--
+            OR <interceptor-ref name="tokenSession"></interceptor-ref>
+             -->
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">update_success.jsp</result>
+            <result name="input">update.jsp</result>
+            <result name="invalid.token">invalid_token.jsp</result>
+        </action>
+    </package>
 </struts>
