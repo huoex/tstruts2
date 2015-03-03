@@ -6,8 +6,8 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
-	
-	<bean class="com.hex.action.Student" name="student"/>
+
+	<bean class="com.hex.model.Student" name="student" />
 
 	<package name="tstruts" extends="struts-default" namespace="/">
 
@@ -25,15 +25,28 @@
 			<interceptor-ref name="defaultStack"></interceptor-ref>
 			<result>success.jsp</result>
 		</action>
-		
+
 		<action name="studentListAction" class="com.hex.action.StudentListAction">
 			<result>studentList.jsp</result>
 		</action>
-		
+
 		<action name="tagsAction" class="com.hex.action.TagsAction">
 			<result>success.jsp</result>
 		</action>
-		
+
+		<action name="getAwareAction" class="com.hex.action.GetAwareAction">
+			<interceptor-ref name="cookie" />
+			<interceptor-ref name="defaultStack" />
+			<result>success.jsp</result>
+		</action>
+
+
+		<action name="home">
+			<result>home.jsp</result>
+		</action>
+		<action name="welcome" class="com.hex.action.WelcomeAction">
+			<result name="success">welcome.jsp</result>
+		</action>
 	</package>
 
 </struts>

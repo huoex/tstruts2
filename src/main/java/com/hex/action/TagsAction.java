@@ -1,5 +1,6 @@
 package com.hex.action;
 
+import com.hex.model.Student;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.inject.Inject;
 

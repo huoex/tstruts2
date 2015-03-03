@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.apache.struts2.ServletActionContext;
 
+import com.hex.model.Student;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class StudentListAction  extends ActionSupport{

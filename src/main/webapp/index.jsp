@@ -33,6 +33,8 @@
 </s:form>
 */ %>
 
-<a href="studentListAction">studentListAction</a>
+<a href="studentListAction">studentListAction</a><br>
+<a href="userIpAccessAction">UserIpAccess</a><br>
+<a href="getAwareAction">getAwareAction</a><br>
 </body>
 </html>
