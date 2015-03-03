@@ -41,7 +41,10 @@
 			<result>success.jsp</result>
 		</action>
 
-
+	</package>
+	
+	<!-- typeConversion -->
+	<package name="type" namespace="/typeConversion" extends="struts-default">
 		<action name="home">
 			<result>home.jsp</result>
 		</action>
@@ -49,8 +52,9 @@
 			<result name="success">welcome.jsp</result>
 		</action>
 	</package>
-
-    <package name="user" namespace="/" extends="struts-default">
+	
+	<!-- token -->
+    <package name="user" namespace="/token" extends="struts-default">
         <action name="update">
             <result>update.jsp</result>
         </action>
